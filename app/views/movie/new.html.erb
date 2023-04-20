@@ -1,0 +1,13 @@
+<h1> Add a Movie! </h1>
+
+<%= form_with model: @movie do |form|%>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :rating %>
+  <%= form.text_field :rating %>
+  <%= form.label :review %>
+  <%= form.text_field :review %>
+  <%= form.submit "Submit" %>
+<% end %>
+
+<h5><%= link_to 'Back to home', movies_path %></h5>

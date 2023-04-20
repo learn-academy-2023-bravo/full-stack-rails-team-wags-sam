@@ -1,0 +1,11 @@
+<h1 calss="glow"> Movie Review App </h1>
+
+<div class= "movie-list">
+<ul> 
+    <% @movies.each do |movie| %>
+    <li> <%=link_to movie.name, movie_path(movie) %> </li>
+    <% end %> 
+</ul>
+
+<h2> <%= link_to 'Add Movie', new_movie_path %> </h2>
+</div>
